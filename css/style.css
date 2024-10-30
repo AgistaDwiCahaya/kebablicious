@@ -34,6 +34,7 @@ body{
 .nav .nav-brand h1{
     text-align: center;
     width: 150px;
+    font-size: 30px;
 }
 .navbar a {
     color: rgb(255, 255, 255);
@@ -41,11 +42,6 @@ body{
     padding: 14px 20px;
 }
 
-
-.hamburger {
-    display: none; /* Hide hamburger by default */
-    cursor: pointer;
-}
 .nav-brand h1,a{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.771);   
@@ -84,11 +80,11 @@ span{
     background-image:url(../../asset/lukisanbg.jpg);
     background-size: cover;
     background-position: center;
+    justify-content: space-between;
 }
 .hero-section .content{
     color: #fffdfd;
-    max-width: 1200px;
-    width: 100%;
+   
 }
 .hero-section .content h1{
     font-size: 3rem;
@@ -119,10 +115,12 @@ span{
     font-size: 1rem;
     font-weight: 500;
     margin-top: 40px;
-    margin-left: 490px;
+    margin-left: 500px;
     padding: 12px 30px;
     border-radius: 10px;
     cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
 }
 .hero-section .content button:hover{
     color: #fffdfd;
@@ -202,10 +200,9 @@ img{
     font-size: 55px;
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-bottom: 30px;
     margin-right: 50px;
-    margin-left: 15px;
+    margin-left: 80px;
     font-family: mv boli;
     color: rgb(39, 82, 54);
 }
@@ -227,9 +224,9 @@ img{
     grid-gap: 43px;
 }
 .menu .menu_box .menu_card{
-    width: 325px;
-    height: 480px;
-    margin-left: 20px;
+    width: 300px;
+    height: 500px;
+    margin-left: 35px;
     padding-top: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -237,7 +234,7 @@ img{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .menu .menu_box .menu_card .menu_image{
-    width: 300px;
+    width: 280px;
     height: 245px;
     margin: 0 auto;
     overflow: hidden;
@@ -419,7 +416,8 @@ img{
 @media screen and (max-width: 768px) {
         /* Adjust container width for smaller screens */
         .container {
-          max-width: 100%; /* Adjust as needed */
+          max-width: 100%; 
+          padding: 5px;/* Adjust as needed */
         }
       
         /* Make navigation items stack vertically */
@@ -428,23 +426,14 @@ img{
           align-items: flex-start;
         }
       
-        /* Show the hamburger menu icon */
-        .hamburger {
-          display: block;
-        }
-      
         /* Hide the regular navigation links on small screens */
         .navbar a {
           display: none;
         }
-      
-        /* Style the hamburger menu icon */
-        .hamburger {
-          /* Add your preferred styles for the hamburger icon here */
-          width: 30px;
-          height: 30px;
-          cursor: pointer;
+        .nav-brand{
+            margin-left:150px;
         }
+      
       
         /* Optional: Adjust font sizes and spacing for better readability */
         .header-left h1 {
@@ -453,30 +442,32 @@ img{
         .header-right a {
           font-size: 16px;
         }
-
-        @media (max-width: 768px) {
-            .hero-section {
-              height: 450px; /* Adjust height as needed */
-              padding: 40px;
-            }
+        .hero-section {
+            height: 450px; /* Adjust height as needed */
+            padding: 40px;
+            align-items: center;
+        }
           
-            .hero-section .content h1 {
-              font-size: 2rem;
-              margin-left: 85px;
-              text-align: center;
-            }
+        .hero-section .content h1 {
+            font-size: 2rem;
+            margin-left: 5px;
+            text-align: center;
+            transform: scale(0.8);
+        }
           
-            .hero-section .content p {
-              margin-left: 65px;
-              text-align: center;
-            }
+        .hero-section .content p {
+            font-size: 1rem;
+            margin-left: 5px;
+            margin-right: 40px;
+            text-align: center;
+        }
           
-            .hero-section .content button {
-              margin-left: 320px;
-              margin-top: 20px;
-            }
-          }
-        @media (max-width: 768px) {
+        .hero-section .content button {
+            margin-left: 250px;
+            margin-top: 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
             .about {
               flex-direction: column;
               align-items: center;
@@ -497,15 +488,13 @@ img{
             .about-content p {
               font-size: 16px;
             }
-        }
-        @media (max-width: 768px) {
             .menu {
               padding: 50px 10px;
             }
           
             .menu h1 {
               font-size: 60px;
-              margin-left: 80px;
+              margin-left: 159px;
             }
           
             .menu .menu_box {
@@ -515,7 +504,7 @@ img{
             .menu .menu_box .menu_card {
               width: 50%;
               margin-bottom: 20px;
-              margin-left: 200px;
+              margin-left: 150px;
             }
           
             .menu .menu_box .menu_card .menu_image {
@@ -527,10 +516,9 @@ img{
               top: -180px;
               right: 30px;
             }
-          }
-        @media (max-width: 768px) {
+         
             .contact {
-              padding: 20px;
+              padding: 10px;
             }
 
             .container_contact {
@@ -538,17 +526,97 @@ img{
             }
           
             .contactForm, .contactInfo {
-              width: 80%;
+              width: 65%;
               margin-bottom: 20px;
             }
           }
+      
+
+
+@media screen and (max-width: 425px) {
+        .hero-section {
+          height: 450px; /* Adjust height as needed */
+          padding: 40px;
+        }
+      
+        .hero-section .content h1 {
+          font-size: 2rem;
+          margin-left: 15px;
+          text-align: center;
+        }
+      
+        .hero-section .content p {
+          margin-left: 1px;
+          text-align: center;
+        }
+      
+        .hero-section .content button {
+          margin-left: 155px;
+          margin-top: 20px;
+        }
+        .about {
+          flex-direction: column;
+          align-items: center;
+        }
+        .heading h1{
+            margin-left: 45px;
+        }
+      
+        .about-content, .about-image {
+          width: 90%;
+          margin: 20px 0;
+        }
+      
+        .about-content h2 {
+          font-size: 28px;
+        }
+      
+        .about-content p {
+          font-size: 16px;
+        }
+    
+        .menu {
+          padding: 50px 10px;
+        }
+      
+        .menu h1 {
+          font-size: 60px;
+          margin-left: 70px;
+          margin-right: 50px;
+        }
+        .small_card i{
+          margin-top: 5px;
+        }
+      
+        .menu .menu_box {
+          grid-template-columns: 1fr;
+        }
+      
+        .menu .menu_box .menu_card {
+          width: 70%;
+          margin-bottom: 20px;
+          margin-left: 70px;
+        }
+      
+        .menu .menu_box .menu_card .menu_image {
+          width: 90%;
+          height: 200px;
+        }
+        .menu .menu_box .menu_card .small_card {
+          top: -180px;
+          right: 30px;
+        }
+      
+        .contact {
+          padding: 20px;
+        }
+
+        .container_contact {
+          flex-direction: column;
+        }
+      
+        .contactForm, .contactInfo {
+          width: 60%;
+          margin-bottom: 20px;
+        }
       }
-
-
-@media screen and (min-width: 576px) {
-
-}
-
-@media screen and (min-width: 340px) {
-
-}
