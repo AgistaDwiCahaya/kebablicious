@@ -450,20 +450,20 @@ img{
           
         .hero-section .content h1 {
             font-size: 2rem;
-            margin-left: 5px;
+            margin-left: 80px;
             text-align: center;
             transform: scale(0.8);
         }
           
         .hero-section .content p {
             font-size: 1rem;
-            margin-left: 5px;
+            margin-left: 80px;
             margin-right: 40px;
             text-align: center;
         }
           
         .hero-section .content button {
-            margin-left: 250px;
+            margin-left: 320px;
             margin-top: 20px;
             align-items: center;
             justify-content: space-between;
@@ -494,7 +494,7 @@ img{
           
             .menu h1 {
               font-size: 60px;
-              margin-left: 159px;
+              margin-left: 250px;
             }
           
             .menu .menu_box {
@@ -504,7 +504,7 @@ img{
             .menu .menu_box .menu_card {
               width: 50%;
               margin-bottom: 20px;
-              margin-left: 150px;
+              margin-left: 200px;
             }
           
             .menu .menu_box .menu_card .menu_image {
@@ -531,9 +531,26 @@ img{
             }
           }
       
-
-
 @media screen and (max-width: 425px) {
+  .navbar {
+    display: flex;
+    flex-direction: column; /* Change to column for smaller screens */
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-brand h1 {
+    text-align: center;
+    width: 100%; /* Adjust width to fill the screen */
+    font-size: 20px; /* Reduce font size */
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 15px; /* Reduce padding */
+    margin: 5px 0; /* Add margin for spacing between links */
+}
         .hero-section {
           height: 450px; /* Adjust height as needed */
           padding: 40px;
